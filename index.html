@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre Nós</a></li>
+            <li><a href="account.html">Minha Conta</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+        </nav>
+        <div id="cart">
+            <h2>Meu Carrinho</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-btn">Finalizar compra</button>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="marg">Produtos</h2>
+        <div id="product-list"></div>
+    </main>
+
+    <script src="JS/prod.js"></script>
+    <script src="JS/cart.js"></script>
+    <script src="JS/main.js"></script>
 </body>
+
 </html>
